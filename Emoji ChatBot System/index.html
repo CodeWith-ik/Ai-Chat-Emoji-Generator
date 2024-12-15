@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeWith_ik - Emoji Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="emo.PNG" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Welcome Popup -->
+    <div id="welcomePopup" class="welcome-popup">
+      <div class="popup-content">
+        <h1 class="h1">Welcome to CodeWith_ik</h1>
+        <p class="h2">Your Emoji Generator is ready!</p>
+        <button id="startButton">Start</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Main Content -->
+    <div id="mainContent" class="container" style="display: none">
+      <div class="card">
+        <div class="emoji" id="emoji">&#128578;</div>
+        <div class="feeling-name" id="feeling-name">Feeling Happy</div>
+      </div>
+      <div class="feeling-buttons">
+        <button
+          class="btn"
+          onclick="changeFeeling('&#128578;', 'Feeling Happy')"
+        >
+          &#128578; Happy
+        </button>
+        <button class="btn" onclick="changeFeeling('&#128577;', 'Feeling Sad')">
+          &#128577; Sad
+        </button>
+        <button
+          class="btn"
+          onclick="changeFeeling('&#128526;', 'Feeling Cool')"
+        >
+          &#128526; Cool
+        </button>
+        <button
+          class="btn"
+          onclick="changeFeeling('&#128565;', 'Feeling Confused')"
+        >
+          &#128565; Confused
+        </button>
+      </div>
+      <button id="random-btn" class="btn" onclick="generateRandomEmoji()">
+        Generate Emoji
+      </button>
+      <button id="copy-btn" class="btn" onclick="copyEmoji()">
+        Copy Emoji
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
